@@ -1,1 +1,2 @@
-console.log("This is my first script");
+console.log("This is my first script");;
+alert("hello")
