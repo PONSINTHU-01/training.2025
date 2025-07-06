@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: medium;
+            padding: auto;
+            margin-top: 5px;
+            text-align: center;
+        }
+        body{
+            min-height: 100vh;
+        }
+        div.fixed {
+              position: fixed;
+              top:40px;
+              left: 50px;
+              border: 3px solid #73AD21;
+                  }
+        div.static {
+              position: static;
+              border: 3px solid #73AD21;
+              overflow: scroll;
+              width: 200px;
+              height: 100px;
+}
+        div.sticky {
+              position: sticky;
+              top: 0;
+              padding: 5px;
+              background-color: #cae8ca;
+              border: 2px solid #4CAF50;
+}
+
+        .btn:hover{
+            color:hotpink;
+        }
+        p{
+            color:red;
+        }
+        #text{
+            color: aquamarine;
+
+        }
+        .demo{
+            color:blue;
+        }
+        .container{
+            display:flex;
+            background-color: coral;
+            flex-direction: column;
+            padding: 30px;
+ }
+        .container>div{
+            background-color: #73AD21;
+            text-align: center;
+            padding: 30px;
+            width: 40%px;
+            height: 100px;
+            margin: 10px;
+}
+    </style>
+</head>
+<body style="height:auto">
+    <h3>CSS concepts</h3>
+
+<p  id="text" class="demo" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:goldenrod;">CSS stands for Cascading Style Sheets. It is used to style and layout web pages — including the design, colors, spacing, and fonts. CSS separates the content (HTML) from presentation (style), making the code cleaner and more manageable.
+</p>
+ <div style=" display: inline;background-color: aquamarine; width: 400px; height: 200px;">This is a div</div>
+ <div style="display:block;background-color:aquamarine; width: 400px; height: 200px;">This is a div</div>   
+ <div style="display:none;background-color:black; width: 400px; height: 200px;">This is a div</div>
+ <div style=" display:inline-block;background-color:  aquamarine; width: 1000px; height: 200px;">This is a div</div>
+ <button class="btn">click</button>
+ <h2>position: fixed;</h2>
+ <div class="fixed">
+This div element has position: fixed;
+</div>
+<h2>position: static;</h2>
+<div class="static">
+This div element has position: static;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+</div>
+<div class="sticky">I am sticky!</div>
+<div class="container">
+    <div>hii</div>
+    <div>hello</div>
+    <div>welcome</div>
+
+</div>
+</body>
+</html>
