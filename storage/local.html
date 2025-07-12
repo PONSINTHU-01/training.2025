@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+        <h3>Local Storage and Seesion Storage</h3>
+        <input type="text" class="a">
+        <input type="submit" onclick="storage()">
+    <p id="b"></p>
+    <script>
+        const element=localStorage.setItem("name","kausi")
+        document.getElementById("demo").innerHTML=localStorage.getItem("name")
+
+        function storage(){
+            const val=document.getElementsByClassName("a")[0].value;
+            localStorage.setItem("val" ,val);
+            document.getElementById("b").innerHTML="Entered text is :" + localStorage.getItem("val")
+        }
+        </script>
+</body>
+</html>

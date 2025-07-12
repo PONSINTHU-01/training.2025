@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Welcome</h2>
+    <h3>learning the basic of DOM</h3>
+    
+    <p class="intro"> Seventh day of learning</p>
+    <p class="intro"> This is a paragragh</p>
+    <p id="demo"></p>
+    <p class="c1"></p>
+    <img id="myimage" src="download.jpg" width="60%">
+    <button onclick="changeImage()">Change Image</button>
+    <p>Enter the number between one to ten</p>
+    <br>
+    <input type="number" id="num">
+    <br>
+    <button type="submit" onclick="func()">Submit</button>
+    
+    
+    <script>
+        function changeImage(){
+            document.getElementById("myimage").src = "img.jpg";
+        }
+        const x=document.getElementsByClassName("intro");
+        for(let i=0; i<x.length; i++)
+        {
+            x[0].style.color="red";
+            x[0].style.backgroundColor="grey";
+
+            x[1].style.color="purple"
+        }
+        document.getElementById("demo").innerHTML="The first paragraph with index[0] is: " + x[0].innerHTML;
+        const element=document.getElementsByTagName("h3");
+        function func() {
+                let x = document.getElementById("num").value;
+                let text;
+                if(x>=1 && x<=10)
+                {
+                    text="Input ok";
+                }
+                else{
+                    text="Invalid";
+                }
+                document.querySelector(".c1").innerHTML=text;
+               }
+</script>
+        
+</body>
+</html>

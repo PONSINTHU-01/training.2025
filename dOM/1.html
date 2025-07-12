@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2 id="greeting"><span style="color:purple; align-items: center;">Hii</span></h2>
+   <div class="item">Apple</div>
+   <div class="item">Banana</div>
+
+   <div class="box">Window</div>
+   <div class="box">Door</div>
+
+   <div id="box" style=" width:200px; height:300px; background-color:lightblue;">
+   <button id="btn">Button</button>
+   </div>
+    <p id="demo"></p>
+
+   <script>
+    const msg=document.getElementById("greeting");
+    const item=document.getElementsByClassName("item");
+    console.log(msg.innerText);
+    console.log(item);
+    
+    const home=document.querySelector(".box");
+    console.log('box',home);
+    home.style.color="green";
+    
+     const element=document.getElementById("btn");
+     element.addEventListener("click",MyFunc);
+     function MyFunc()
+     {
+        document.getElementById("demo").innerText +="clicked !  " ;
+     } 
+
+    const a = document.createElement("p");
+    a.innerHTML = "I was added";
+    const para = document.getElementById("container").appendChild(a);
+    console.log(para);
+
+    </script>
+</body>
+</html>
