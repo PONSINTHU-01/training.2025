@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="round.js"></script>
+<style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+
+    }
+</style>
+</head>
+<body>
+   <h1>Dice Rolling Game</h1>
+   <h3 id="round">Round:1 to 3</h3>
+   <div class="box">
+    <h2 id="name1Label">Player 1</h2>
+    <div class="conat">
+    <input type="text" id="input1" placeholder="Enter your name" >
+    <br>
+    <button onclick="editName(1)">Edit Name</button>
+    </div>
+    <img id="dice1" class="dice" src="dice1.jpg">
+    <div id="score1">Rounds won: 0</div>
+   </div> 
+   <div class="box">
+    <h2 id="name2Label">Player 2</h2>
+    <div class="conat">
+    <input type="text" id="input2" placeholder="Enter Your Name" >
+    <br>
+    <button onclick="editName(2)">Edit Name</button>
+    </div>
+   <img id="dice2" class="dice" src="dice2.jpg">
+    <div id="score2">Rounds won:0</div>
+   </div>
+   <br><br>
+   <button onclick="roll()" id="rollbtn"> Roll Dice</button>
+   <h2 id="result"></h2>
+</body>
+</html>
