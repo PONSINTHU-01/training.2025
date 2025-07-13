@@ -1,13 +1,17 @@
 body{
-    background-image: url('grad1.jpg');
+    background-image: url('grad2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 h1{
     font-size: 3rem;
+    text-shadow: 4px 4px 4px blanchedalmond;
 
 }
 .box{
     display:inline-block;
-    
     padding: 30px;
 
 }
@@ -18,12 +22,12 @@ h1{
     margin-bottom: 20px;
     
 }
-.input[type="text"]{
-    border-radius: 50px;
-    height: 80px;
+input[type="text"]{
+    border-radius: 5px;
+    height: 20px;
     padding: 8px;
     width:160px;
-    border:1px solid green;
+    font-size: 15px;
 }
 button{
     padding: 8px 16px;
@@ -43,7 +47,13 @@ button:hover{
     margin-top: 10px;
     padding: 20px;
     width:20%;
+    background-color: darkgrey;
+    color: #ff4b2b;
     
+}
+#rollbtn:hover{
+    background-color: rgb(244, 14, 160);
+    color: aliceblue;
 }
 #result{
     font-size: 25px;
@@ -52,7 +62,7 @@ button:hover{
     font-weight: bold;
 }
 #round{
-    color: bisque;
+    color:ivory;
     font-size: 3rem;
     font-style: oblique;
 }
