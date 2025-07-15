@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", async()=>{
                 taskText.style.color="red";
             }
 
-//edit button
             const editBtn=document.createElement("button");
             editBtn.textContent="Edit";
             editBtn.classList.add("edit-btn");
