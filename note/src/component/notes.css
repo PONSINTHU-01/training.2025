@@ -1,0 +1,146 @@
+.notes-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.notes-list {
+  width: 25%;
+  background: #f1f1f1;
+  padding: 10px;
+  border-right: 2px solid #ddd;
+  transition: background 0.3s ease;
+}
+.note-preview {
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-height: 120px;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.note-preview h1, .note-preview h2, .note-preview h3 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.note-preview ul {
+  padding-left: 20px;
+}
+
+
+.notes-list input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.notes-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notes-list li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes-list li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.notes-editor {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-title,
+.note-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.note-input {
+  height: 200px;
+  resize: none;
+}
+
+.last-edit {
+  font-size: 12px;
+  color: gray;
+}
+
+.save-btn {
+  padding: 8px 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: orange;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Dark Mode Styles */
+.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark .notes-list {
+  background-color: #2c2c2c;
+  border-right: 2px solid #444;
+}
+
+.dark .note-title,
+.dark .note-input {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark .save-btn {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  background: linear-gradient(135deg, #333, #111);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-toggle:hover {
+  background: linear-gradient(135deg, #555, #222);
+}
