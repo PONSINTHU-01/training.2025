@@ -21,7 +21,8 @@ const Todo = () => {
       id: Date.now(),
       text: taskText,
       completed: false,
-      note: "" // This will be filled from the Notes page
+      note:""
+  
     };
     setTasks([...tasks, newTask]);
     setTaskText("");
@@ -42,11 +43,7 @@ const Todo = () => {
   return (
     <div className="todo-container">
       <h1>To-Do List</h1>
-      <input
-        type="text"
-        placeholder="Enter your task"
-        value={taskText}
-        onChange={(e) => setTaskText(e.target.value)}
+      <input type="text" placeholder="Enter your task" value={taskText} onChange={(e) => setTaskText(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && addTask()}
       />
       <button onClick={addTask} className="add-btn">Add Task</button>
@@ -54,11 +51,7 @@ const Todo = () => {
       <ul>
         {tasks.map((task, index) => (
           <li key={task.id} className={task.completed ? "completed" : ""}>
-            <input
-              type="checkbox"
-              checked={task.completed}
-              onChange={() => toggleTask(index)}
-            />
+            <input type="checkbox" checked={task.completed} onChange={() => toggleTask(index)}/>
             <span>{task.text}</span>
             <button onClick={() => navigate(`/notes/${task.id}`)} className="note-btn">
               View Notes
