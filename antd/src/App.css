@@ -1,0 +1,51 @@
+.head{
+  text-align: center;
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.purple{
+  background-color: purple;
+  color: white;
+}
+.red{
+  background-color: red;
+  color: white;
+}
+.blue{
+  background-color:blue;
+  color: white;
+}
+.green{
+  background-color: green;
+  color: white;
+}
+.black{
+  background-color: black;
+  color: white;
+}
+.yellow{
+  background-color: yellow;
+  color: rgb(8, 8, 8);
+}
+.ant-card-grid:hover {
+  transform: scale(1.1);          
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .ant-card-grid {
+    width: 45% !important;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .ant-card-grid {
+    width: 90% !important;
+  }
+
+  .head {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+}
