@@ -38,4 +38,6 @@ select * from employees where name LIKE 'R%';
 
 select name from employees where role in('Developer','Manager');
 
+Alter table employees drop column age;
+
 delete from employees where id=6;
